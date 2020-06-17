@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="buy"
+            type="com.example.mvvmtest.ViewModel.MainViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".View.MainActivity">
+
+        <View
+            android:id="@+id/titleView_a"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <TextView
+            android:id="@+id/tva"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buy_bg"
+            app:layout_constraintEnd_toEndOf="@id/titleView_a"
+            app:layout_constraintStart_toStartOf="@id/titleView_a"
+            app:layout_constraintTop_toTopOf="@id/titleView_a" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/tva"
+            app:layout_constraintStart_toStartOf="@id/tva"
+            app:layout_constraintTop_toBottomOf="@id/tva" />
+
+
+        <View
+            android:id="@+id/titleView_b"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintStart_toEndOf="@id/titleView_a"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <TextView
+            android:id="@+id/tvb"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buy_bg"
+            app:layout_constraintEnd_toEndOf="@id/titleView_b"
+            app:layout_constraintStart_toStartOf="@id/titleView_b"
+            app:layout_constraintTop_toTopOf="@id/titleView_b" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/tvb"
+            app:layout_constraintStart_toStartOf="@id/tvb"
+            app:layout_constraintTop_toBottomOf="@id/tvb" />
+        <!--c-->
+        <View
+            android:id="@+id/titleView_c"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintStart_toEndOf="@id/titleView_b"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <TextView
+            android:id="@+id/tvc"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buy_bg"
+            app:layout_constraintEnd_toEndOf="@id/titleView_c"
+            app:layout_constraintStart_toStartOf="@id/titleView_c"
+            app:layout_constraintTop_toTopOf="@id/titleView_c" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/tvc"
+            app:layout_constraintStart_toStartOf="@id/tvc"
+            app:layout_constraintTop_toBottomOf="@id/tvc" />
+        <!--d-->
+        <View
+            android:id="@+id/titleView_d"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintStart_toEndOf="@id/titleView_c"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <TextView
+            android:id="@+id/tvd"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buy_bg"
+            app:layout_constraintEnd_toEndOf="@id/titleView_d"
+            app:layout_constraintStart_toStartOf="@id/titleView_d"
+            app:layout_constraintTop_toTopOf="@id/titleView_d" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accout"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/tvd"
+            app:layout_constraintStart_toStartOf="@id/tvd"
+            app:layout_constraintTop_toBottomOf="@id/tvd" />
+
+        <!--image-->
+        <TextView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:text="Carousel"
+            android:textColor="@color/grayfont"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleView_a" />
+
+        <TextView
+            android:id="@+id/recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Recommend"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/recommend" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/buyRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/more"></androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/xinwen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buyRv"></androidx.recyclerview.widget.RecyclerView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
